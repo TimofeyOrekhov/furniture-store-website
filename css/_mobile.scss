@@ -1,0 +1,255 @@
+@media(max-width: 767px) {
+    .center {
+        padding: 0 16px;
+    }
+
+    .for {
+        margin-top: 32px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+
+        &__input {
+            display: none;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__mobile {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+
+    .logo {
+        width: 99px;
+    }
+
+    .top {
+        &__title {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 59px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &__link {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .for {
+        &__content {
+            margin-top: 32px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__item-box {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+
+            &_big {
+                height: 244px;
+            }
+
+        }
+    }
+
+    .catalog {
+        margin: 32px 0;
+
+
+        &__top {
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+
+        &__sorting {
+            flex-direction: column-reverse;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__card {
+            gap: 32px;
+            justify-content: center;
+        }
+    }
+
+    .card {
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__sale {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .cart {
+        margin-top: 92px;
+        grid-template-columns: repeat(4, 1fr);
+
+        &__name-box {
+            display: none;
+        }
+
+        &__card-box {
+            border-top: 0.5px solid rgb(202, 205, 216);
+            gap: 24px;
+        }
+
+        &__box-button {
+            gap: 14px;
+        }
+
+        &__item {
+            padding-top: 18px;
+        }
+
+        &__img-box {
+            display: none;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__left {
+            width: 216px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    .cart-form {
+        &__input {
+            width: auto;
+        }
+
+        &__btn-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 148px;
+        }
+
+    }
+
+    .cart-catalog {
+        &__link {
+            display: none;
+
+            &_mobile {
+                display: block;
+            }
+        }
+
+    }
+
+    .filtering {
+        &__form {
+            left: 0px;
+            width: 190px;
+        }
+
+        &__wrap {
+            flex-wrap: nowrap;
+            max-width: 240px;
+            height: auto;
+        }
+
+
+        &__button-app {
+            align-self: flex-start;
+        }
+    }
+
+    .footer {
+        margin-top: 32px;
+        padding-bottom: 32px;
+
+        &__content {
+            justify-content: center;
+            gap: 71px;
+        }
+
+        &__info {
+            gap: 100px;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .cart {
+        &__button {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 352px) {
+    .top__title {
+        font-size: 42px;
+    }
+
+    .footer__info {
+        gap: 80px;
+    }
+
+    .cart {
+        &__left {
+            display: flex;
+            gap: 32px;
+
+        }
+
+        &__button {
+            font-size: 11px;
+        }
+
+    }
+
+    .cart-form {
+        &__input {
+            padding-right: 28px;
+        }
+    }
+
+}

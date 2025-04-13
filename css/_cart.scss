@@ -1,0 +1,354 @@
+.top {
+    &_cart {
+        height: 400px;
+        background-image: url(../images/cart_header.jpeg);
+    }
+
+    &__title-cart {
+        margin-top: 127px;
+    }
+}
+
+
+
+.cart {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__card-box {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &:first-child {
+            padding-top: 25px;
+        }
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        width: 276px;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    &__text {
+        color: $additionalColorText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+
+    }
+
+    &__price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__link {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+    }
+
+    &__link:hover {
+        color: $additionalColorText;
+        text-decoration-line: none;
+
+    }
+
+    &__img-box {
+        width: 173px;
+        height: 173px;
+        overflow: hidden;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__box-button {
+        display: flex;
+        gap: 7px;
+        margin-top: 50px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColorText;
+        width: 200px;
+        height: 37px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: rgb(2, 2, 2);
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 400;
+        transition: $transition;
+
+        &:hover {
+            &:hover {
+                background-color: #000000; // Черный фон на ховере
+                color: white; // Белый текст на ховере
+            }
+        }
+    }
+
+    &__button-text {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+
+
+
+
+    &__input-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+
+    }
+
+
+
+
+
+
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        height: 556px;
+        grid-column: span 4;
+    }
+
+
+
+}
+
+
+.input-quantity {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 71px;
+    height: 51px;
+
+    &__input {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #f7f6f6;
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        text-indent: -25px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+
+        // Убираем дефолтные стрелки для всех браузеров
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &[type="number"] {
+            -moz-appearance: textfield; // Для Firefox
+        }
+    }
+
+    &.input-quantity_up,
+    &.input-quantity_down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    &.input-quantity_up {
+        position: absolute;
+        right: 14px;
+        top: 10px;
+    }
+
+    &.input-quantity_down {
+        position: absolute;
+        right: 14px;
+        bottom: 9px;
+    }
+}
+
+
+
+
+.cart-form {
+    grid-column: span 4;
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    padding: 42px 28px;
+
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+
+
+    }
+
+    &__input {
+        width: 288px;
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        color: rgb(0, 0, 0);
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        background-color: rgb(247, 246, 246);
+
+    }
+
+    &__summary {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__result-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 9px;
+        margin-top: 23px;
+    }
+
+    &__result {
+        color: rgb(0, 0, 0);
+        font-family: $mainFont;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        &_weight {
+            font-weight: 500;
+        }
+    }
+
+
+
+    &__button {
+        width: 290px;
+        height: 41px;
+        color: rgb(0, 0, 0);
+        font-family: $mainFont;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        margin: 0 18px;
+        transition: $transition;
+        cursor: pointer;
+        background-color: transparent;
+
+    }
+
+
+    &__button:hover {
+        background: rgb(0, 0, 0);
+        color: $mainColorText;
+    }
+
+}
+
+.cart-catalog {
+
+    &__link-box {
+        margin-top: 32px;
+    }
+
+    &__link {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &_mobile {
+            display: none;
+        }
+    }
+}
